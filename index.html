@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/svg" href="/favicon.svg" />
     <script
       src="https://kit.fontawesome.com/e6e9fc70ba.js"
@@ -19,11 +22,14 @@
     <!---------------MAIN CONTAINER----------------->
     <div class="container">
       <!---------------ASIDE----------------->
-      <aside class="aside">
+      <aside id="aside" class="aside">
         <div class="aside__container-logo">
           <img class="container-logo__img" src="./public/favicon.svg" alt="" />
           <h1 class="container-logo__title">Dashboard</h1>
         </div>
+        <span id="menuClose" class="aside__container-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
         <nav class="aside__nav">
           <ul class="nav__menu">
             <li class="menu__item">
@@ -80,6 +86,9 @@
       <!---------------HEADER----------------->
       <header class="header">
         <div class="header__container-top">
+          <span id="menuOpen" class="container-top__container-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
           <div class="container-top__container-search">
             <label class="container-search__label" for="search"
               ><i class="label__icon fa-solid fa-magnifying-glass"></i
@@ -88,18 +97,24 @@
           </div>
           <div class="container-top__container-profile">
             <i class="container-profile__icon fa-regular fa-bell"></i>
-            <img class="container-profile__img" src="" alt="Image Profile" />
-            <button class="container-profile__button">
-              Morgan Oakley<i class="button__icon fa-solid fa-angle-down"></i>
-            </button>
+            <img
+              class="container-profile__img"
+              src="/public/profile.jpg"
+              alt="Image Profile"
+            />
+            <button class="container-profile__button">Morgan Oakley</button>
           </div>
         </div>
         <div class="header__container-bottom">
           <div class="container-bottom__container-img">
-            <img class="container-img__img" src="" alt="Image Profile" />
+            <img
+              class="container-img__img"
+              src="/public/profile.jpg"
+              alt="Image Profile"
+            />
           </div>
           <h2 class="container-bottom__title">
-            <p class="title__p"></p>
+            <p class="title__p">Hi, there,</p>
             Morgan Oakley (@morgan)
           </h2>
           <div class="container-bottom__container-buttons">
@@ -112,116 +127,210 @@
       <!---------------MAIN----------------->
       <main class="main">
         <div class="main__container-projects">
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
+          <h4 class="container-projects__title">Your Projects</h4>
+          <section class="container-projects__section">
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+            <article class="section__article">
+              <div class="article__container-text">
+                <h5 class="container-text__title">Super Cool Project</h5>
+                <p class="container-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  amet odit reprehenderit cumque voluptate non ut, consectetur
+                  vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
+                  quibusdam velit et eligendi!
+                </p>
+              </div>
+              <div class="article__container-icons">
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-star"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a href="" class="container-icons__icon">
+                  <i class="fa-solid fa-code-fork"></i>
+                </a>
+              </div>
+            </article>
+        </section>
+        </div>
+        <div class="main__container-sidebar">
+          <h4 class="container-sidebar__title">Announcements</h4>
+          <article class="container-sidebar__article">
+            <div class="article__container-announcements">
+              <h5 class="container-announcements__title">Site Maintenance</h5>
+              <p class="container-announcements__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
+            <div class="article__container-announcements">
+              <h5 class="container-announcements__title">
+                Community Share Day
+              </h5>
+              <p class="container-announcements__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="article__container-announcements">
+              <h5 class="container-announcements__title">
+                Update Privacy Policy
+              </h5>
+              <p class="container-announcements__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
           </article>
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
-              </p>
+          <h4 class="container-sidebar__title">Trending</h4>
+          <article class="container-sidebar__article">
+            <div class="article__container-users">
+              <div class="container-users__container-img-user">
+                <img src="/public/profile.jpg" alt="User Image" class="container-img-user__img">
+              </div>
+              <div class="container-users__container-info">
+                <p class="container-info__name">@tegan</p>
+                <p class="container-info__name-project">World Peace Builder</p>
+              </div>
             </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
+            <div class="article__container-users">
+              <div class="container-users__container-img">
+                <img src="/public/profile.jpg" alt="User Image" class="container-img-user__img">
+              </div>
+              <div class="container-users__container-info">
+                <p class="container-info__name">@tegan</p>
+                <p class="container-info__name-project">World Peace Builder</p>
+              </div>
             </div>
-          </article>
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
-              </p>
+            <div class="article__container-users">
+              <div class="container-users__container-img">
+                <img src="/public/profile.jpg" alt="User Image" class="container-img-user__img">
+              </div>
+              <div class="container-users__container-info">
+                <p class="container-info__name">@tegan</p>
+                <p class="container-info__name-project">World Peace Builder</p>
+              </div>
             </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
-            </div>
-          </article>
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
-              </p>
-            </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
-            </div>
-          </article>
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
-              </p>
-            </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
-            </div>
-          </article>
-          <article class="container-projects__article">
-            <div class="article__container-text">
-              <h5 class="container-text__title">Super Cool Project</h5>
-              <p class="container-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                amet odit reprehenderit cumque voluptate non ut, consectetur
-                vel, tenetur repellendus dolore ipsam vero eveniet autem? Aut
-                quibusdam velit et eligendi!
-              </p>
-            </div>
-            <div class="article__container-icons">
-              <a href="" class="container-icons__icon">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-eye"></i>
-                <i class="fa-solid fa-code-fork"></i>
-              </a>
+            <div class="article__container-users">
+              <div class="container-users__container-img">
+                <img src="/public/profile.jpg" alt="User Image" class="container-img-user__img">
+              </div>
+              <div class="container-users__container-info">
+                <p class="container-info__name">@tegan</p>
+                <p class="container-info__name-project">World Peace Builder</p>
+              </div>
             </div>
           </article>
         </div>
       </main>
     </div>
+    <script src="/js/menuLateral.js"></script>
   </body>
 </html>
